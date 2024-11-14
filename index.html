@@ -99,7 +99,7 @@
       <div class="container-fluid">
         <div class="d-flex align-items-center g-4">
           <a class="navbar-brand d-flex" href="index.html">
-            <img src="images/logo.png" style="width: 400px;" class="img-fluid" id="logo">
+            <img src="images/logo.png" style="width: 350px;" class="img-fluid" id="logo">
           </a>
           <!--
           <div class="icon px-5">
@@ -154,7 +154,9 @@
               </svg>
             </a>
           </div>
+          -->
         </div>
+      
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navabar-toggler-icon">
@@ -163,7 +165,7 @@
             </svg>
           </span>
         </button>
-        <div class="offcanvas offcanvas-end text-white bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div style="background-color: #0f6a8f;;" class="offcanvas offcanvas-end text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <button type="button" class="btn-close btn-close-white ms-3" data-bs-dismiss="offcanvas"
               aria-label="Close"></button>
@@ -171,21 +173,22 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav flex-grow-1 p-4">
               <li class="nav-item">
-                <a class="nav-link active text-uppercase ls-4 text-white" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active text-uppercase ls-4 text-white" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Portfolio 
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="#about">About Me 
                 </a>
               </li>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Single Portfolio 
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="#work">My Work 
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Single Post 
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="#photo">Photo Gallery 
                 </a>
               </li>
+              <!--
               <li class="nav-item">
                 <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Styles 
                 </a>
@@ -202,36 +205,87 @@
                 <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Contact 
                 </a>
               </li>
+            -->
             </ul>
           </div>
         </div>
       </div>
     </nav>
-    -->
+  
   </header>
 
   <section>
     <div class="container">
       <style>
-        @media (min-width: 760px) and (max-width: 1200px) {
-          .row {
-            gap: 1rem; /* Adjust spacing between items */
-          }
-          .d-flex {
-            flex-wrap: wrap; /* Allow items to wrap if space is tight */
-          }
+        .banner {
+          background-image: url(images/WhatsApp\ Image\ 2024-11-12\ at\ 16.05.26.jpeg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+  
+        /* General Styles */
+        .experience-years, .movies-completed {
+          font-size: 3rem; /* Adjust font size for smaller screens */
+          color: black;
+        }
+        .experience-details {
+          text-align: center;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
           .experience-years, .movies-completed {
-            min-width: 80px; /* Ensure minimum width to prevent overlap */
+            font-size: 2.5rem;
+            min-width: 70px;
           }
           .experience-details {
-            flex-basis: 100%; /* Place details below if they start to overlap */
+            flex-basis: 100%;
             margin-top: 0.5rem;
           }
         }
+        
+        @media (max-width: 992px) {
+          .banner-text h1 {
+            font-size: 3rem;
+          }
+          .experience-years, .movies-completed {
+            font-size: 2rem;
+          }
+        }
+  
+        @media (max-width: 768px) {
+          .banner {
+            padding: 3rem 1.5rem;
+          }
+          .banner-text h1 {
+            font-size: 2.5rem;
+          }
+          .experience-years, .movies-completed {
+            font-size: 1.8rem;
+          }
+          .experience-details {
+            font-size: 1rem;
+          }
+          .bg-blackk {
+            padding: 1.5rem;
+          }
+        }
+  
+        @media (max-width: 576px) {
+          .experience-years, .movies-completed {
+            font-size: 1.5rem;
+          }
+          .experience-details {
+            font-size: 0.9rem;
+          }
+          .banner-text p, .banner-text h1 {
+            text-align: center;
+          }
+        }
       </style>
-    
-      <div class="banner rounded-4 p-5"
-           style="background-image: url(images/WhatsApp\ Image\ 2024-11-12\ at\ 16.05.26.jpeg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+  
+      <div class="banner rounded-4 p-5">
         <div class="text-content text-white py-5 my-5 banner-text">
           <p class="fs-4" style="color: #9c9898;">
              Artist / Movie Action Director 
@@ -242,22 +296,22 @@
         </div>
         
         <div class="row text-uppercase bg-blackk rounded-4 p-3 mt-5 mx-auto">
-          <div class="col-md-3">
-            <div class="d-flex align-items-center gap-4">
-              <h2 class="display-2 text-black experience-years">
+          <div class="col-md-3 col-6 mb-3">
+            <div class="d-flex flex-column align-items-center text-center">
+              <h2 class="display-2 experience-years">
                 15+
               </h2>
-              <p class="text-secondary-emphasis justify-content-center m-0 ls-4 experience-details">
+              <p class="text-secondary-emphasis experience-details">
                 Years of <br> experience
               </p>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="d-flex align-items-center gap-4">
-              <h2 class="display-2 text-black movies-completed">
+          <div class="col-md-3 col-6 mb-3">
+            <div class="d-flex flex-column align-items-center text-center">
+              <h2 class="display-2 movies-completed">
                 100+
               </h2>
-              <p class="text-secondary-emphasis justify-content-center m-0 ls-4 experience-details">
+              <p class="text-secondary-emphasis experience-details">
                 Movies <br> Completed
               </p>
             </div>
@@ -265,37 +319,12 @@
         </div>
       </div>
     </div>
-    
-          <!-- Uncomment if needed
-          <div class="col-md-3">
-            <div class="d-flex align-items-center gap-4">
-              <h2 class="display-2 text-light">
-                720
-              </h2>
-              <p class="text-light-emphasis justify-content-center m-0 ls-4">
-                employees <br> worldwide
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="d-flex align-items-center gap-4">
-              <h2 class="display-2 text-light">
-                2200
-              </h2>
-              <p class="text-light-emphasis justify-content-center m-0 ls-4">
-                projects completed
-              </p>
-            </div>
-          </div>
-          -->
-        </div>
-      </div>
-    </div>
   </section>
+  
   
 
   
-  <section class="py-5">
+  <section class="py-5" id="about">
     <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2 text-center">
@@ -342,6 +371,9 @@
               </p>
               <p class="text-light-emphasis">
                 <i class="bi bi-chat"></i> bruceleerajesh2000@yahoo.com
+              </p>
+              <p class="text-light-emphasis">
+                <i class="bi bi-instagram"></i> bruceleerajesh
               </p>
             </div>
           </div>
@@ -413,7 +445,7 @@
 -->
 
   <section>
-    <div class="container">
+    <div class="container" id="work">
       <div class="row">
         <div class="col-md-8 offset-md-2 text-center">
           <h3 style="font-size: 45px;font-family: 'Work sans';" class="mb-5">My Work</h3>
@@ -554,7 +586,7 @@
   </section>
 -->
 
-  <section class="portfolio py-5">
+  <section class="portfolio py-5" id="photo">
     <div class="container">
       <div class="justify-content-center">
         <div class="row justify-content-center">
@@ -964,11 +996,12 @@
       </div>
     </div>
   </section>
-
-  <footer id="footer" class="bg-black text-white py-5">
+-->
+  <footer id="footer" class="text-white py-3" style="background-color: #0f6a8f;;">
     <div class="container-sm">
-      <div class="row g-md-5 my-5">
+      <div class="row g-md-2 my-2">
         <div class="col-md-4">
+          <!--
           <div class="info-box">
             <img src="images/logo-2.png" class="img-fluid">
             <p class="py-4">
@@ -1007,7 +1040,9 @@
               </svg>
             </div>
           </div>
+        -->
         </div>
+        <!--
         <div class="col-md-3">
           <div class="row">
             <div class="col-6">
@@ -1036,6 +1071,7 @@
             </div>
           </div>
         </div>
+        
         <div class="col-md-5">
           <p>
             Just feel free to contact if you wanna collaborate with me, or simply have a conversation.
@@ -1044,13 +1080,14 @@
             <a href="mailto:contact@yourwebsite.com" class="text-white text-decoration-none">contact@yourwebsite.com</a>
           </h3>
         </div>
+      -->
       </div>
       <div class="row">
-        <p>©2024 Jessica. Free HTML Template by <a href="https://templatesjungle.com/" class="text-white" target="_blank">TemplatesJungle</a>. Distributed By <a href="https://themewagon.com" class="text-white" target="blamk">ThemeWagon</a> </p>
+        <p style="text-align: center;">Design and Distributed By <a href="https://www.acmeflare.in/" class="text-white" target="blank">Acmeflare</a> </p>
       </div>
     </div>
   </footer>
--->
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="js/jquery-1.11.0.min.js"></script> <!-- jquery file-->
 
