@@ -226,11 +226,18 @@
   
         /* General Styles */
         .experience-years, .movies-completed {
-          font-size: 3rem; /* Adjust font size for smaller screens */
-          color: black;
+          font-size: 3rem; /* Default font size */
+          color: #333333;
         }
         .experience-details {
           text-align: center;
+        }
+  
+        /* Larger Font Size for Screens 1200px and Up */
+        @media (min-width: 1200px) {
+          .experience-years, .movies-completed {
+            font-size: 6rem; /* Larger font size for screens wider than 1200px */
+          }
         }
         
         /* Responsive Styles */
@@ -322,6 +329,9 @@
   </section>
   
   
+  
+  
+  
 
   
   <section class="py-5" id="about">
@@ -356,9 +366,9 @@
               <div class="py-4">
                 <h5>Address:</h5>
                 <p class="text-light-emphasis">
-                  Veettikkal House <br>
-                  Kallepadam Post, Pazhayannur <br>
-                  Thrissur, Kerala - 680587
+                  Peroth building <br>
+                  Viyyur post <br>
+                  Padukad, Thrissur -680010.
                 </p>
               </div>
               
@@ -450,6 +460,8 @@
         <div class="col-md-8 offset-md-2 text-center">
           <h3 style="font-size: 45px;font-family: 'Work sans';" class="mb-5">My Work</h3>
           <p style="font-family: 'Work Sans';font-size: 18px; text-align: justify;color: #554949;">I’m deeply committed to delivering powerful action sequences that resonate with the audience. Whether it’s a high-stakes fight scene or a dramatic moment that requires a detailed performance, I pour my heart and soul into each project. My approach to action direction combines precision, creativity, and an understanding of what makes scenes impactful.</p>
+          <br>
+          <p style="font-family: 'Work Sans';font-size: 18px; text-align: justify;color: #554949;">Stunt expert specializing in rope drops, car crashes, and shootouts—delivering thrilling action with precision and safety!</p>
           <br>
           <p style="font-family: 'Work Sans';font-size: 18px; text-align: justify;color: #554949;">In addition to action direction, I’ve had the honor of acting in films such as Kaithola Chathan, Theekuchiyum Panithulliyum, Kathalan Yaredy, and Ore Peachu Ore Mudivu. My experience on both sides of the camera has enriched my perspective, enabling me to bring a unique blend of authenticity and intensity to every role.</p>
           <br>
@@ -609,69 +621,85 @@
         <div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-4" data-aos="fade-up">
           <!-- Photography Section - 4 Unique Images -->
           <div class="col mb-4 portfolio-item photography">
-            <a href="/images/WhatsApp Image 2024-11-12 at 07.49.24.jpeg" data-lightbox="photography" data-title="Photography 1"
+            <a href="/images/WhatsApp Image 2024-11-12 at 07.49.24.jpeg" data-lightbox="photography" data-tmitle="Photography 1"
                ><img src="/images/WhatsApp Image 2024-11-12 at 07.49.24.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
           <div class="col mb-4 portfolio-item photography">
-            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.26.jpeg" data-lightbox="photography" data-title="Photography 2"
+            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.26.jpeg" data-lightbox="photography" data-titmle="Photography 2"
                ><img src="/images/WhatsApp Image 2024-11-11 at 22.03.26.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
           <div class="col mb-4 portfolio-item photography">
-            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.27.jpeg" data-lightbox="photography" data-title="Photography 3"
+            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.27.jpeg" data-lightbox="photography" data-titlde="Photography 3"
                ><img src="/images/WhatsApp Image 2024-11-11 at 22.03.27.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
           <div class="col mb-4 portfolio-item photography">
-            <a href="/images/WhatsApp Image 2024-11-11 at 22.07.35.jpeg" data-lightbox="photography" data-title="Photography 4"
+            <a href="/images/WhatsApp Image 2024-11-11 at 22.07.35.jpeg" data-lightbox="photography" data-tidtle="Photography 4"
               ><img src="/images/WhatsApp Image 2024-11-11 at 22.07.35.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item photography">
+            <a href="/images//2.jpeg" data-lightbox="photography" data-tidtle="Photography 4"
+              ><img src="/images/2.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item photography">
+            <a href="/images/33.jpeg" data-lightbox="photography" data-tidtle="Photography 4"
+              ><img src="/images/33.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item photography">
+            <a href="/images/35.jpeg" data-lightbox="photography" data-tidtle="Photography 4"
+              ><img src="/images/35.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item photography">
+            <a href="/images/34.jpeg" data-lightbox="photography" data-tidtle="Photography 4"
+              ><img src="/images/34.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
       
           <!-- Graphic Design Section - 4 Unique Images -->
           <div class="col mb-4 portfolio-item graphicdesign">
-            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.49.jpeg" data-lightbox="graphicdesign" data-title="Graphic Design 1"
+            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.49.jpeg" data-lightbox="graphicdesign" data-tfitle="Graphic Design 1"
                ><img src="/images/WhatsApp Image 2024-11-11 at 22.03.49.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
           <div class="col mb-4 portfolio-item graphicdesign">
-            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.55.jpeg" data-lightbox="graphicdesign" data-title="Graphic Design 2"
+            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.55.jpeg" data-lightbox="graphicdesign" data-tiftle="Graphic Design 2"
                ><img src="/images/WhatsApp Image 2024-11-11 at 22.03.55.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
           <div class="col mb-4 portfolio-item graphicdesign">
-            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.57.jpeg" data-lightbox="graphicdesign" data-title="Graphic Design 3"
+            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.57.jpeg" data-lightbox="graphicdesign" data-titfle="Graphic Design 3"
                ><img src="/images/WhatsApp Image 2024-11-11 at 22.03.57.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
           <div class="col mb-4 portfolio-item graphicdesign">
-            <a href="/images/WhatsApp Image 2024-11-12 at 20.28.26.jpeg" data-lightbox="graphicdesign" data-title="Graphic Design 4"
+            <a href="/images/WhatsApp Image 2024-11-12 at 20.28.26.jpeg" data-lightbox="graphicdesign" data-titlfe="Graphic Design 4"
                ><img src="/images/WhatsApp Image 2024-11-12 at 20.28.26.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
       
           <!-- Illustrations Section - 2 Unique Images -->
           <div class="col mb-4 portfolio-item illustrations">
-            <a href="/images/award.jpeg" data-lightbox="illustrations" data-title="Illustrations 1"
+            <a href="/images/award.jpeg" data-lightbox="illustrations" data-titfle="Illustrations 1"
                ><img src="/images/award.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
           <div class="col mb-4 portfolio-item illustrations">
-            <a href="/images/award2.jpeg" data-lightbox="illustrations" data-title="Illustrations 2"
+            <a href="/images/award2.jpeg" data-lightbox="illustrations" data-titfle="Illustrations 2"
               ><img src="/images/award2.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
           <div class="col mb-4 portfolio-item illustrations">
-            <a href="/images/WhatsApp Image 2024-11-13 at 00.18.07.jpeg" data-lightbox="illustrations" data-title="Illustrations 2"
+            <a href="/images/WhatsApp Image 2024-11-13 at 00.18.07.jpeg" data-lightbox="illustrations" data-titfle="Illustrations 2"
                ><img src="/images/WhatsApp Image 2024-11-13 at 00.18.07.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
       
           <!-- Branding Section - 2 Unique Images -->
           <div class="col mb-4 portfolio-item branding">
-            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.36.jpeg" data-lightbox="branding" data-title="Branding 1"
+            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.36.jpeg" data-lightbox="branding" data-titfle="Branding 1"
               ><img src="/images/WhatsApp Image 2024-11-11 at 22.03.36.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
           <div class="col mb-4 portfolio-item branding">
-            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.41.jpeg" data-lightbox="branding" data-title="Branding 2"
+            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.41.jpeg" data-lightbox="branding" data-titlfe="Branding 2"
               ><img src="/images/WhatsApp Image 2024-11-11 at 22.03.41.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
           <div class="col mb-4 portfolio-item branding">
-            <a href="/images/785.jpeg" data-lightbox="branding" data-title="Branding 2"
+            <a href="/images/785.jpeg" data-lightbox="branding" data-tiftle="Branding 2"
               ><img src="/images/785.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
           <div class="col mb-4 portfolio-item branding">
-            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.30.jpeg" data-lightbox="branding" data-title="Branding 2"
+            <a href="/images/WhatsApp Image 2024-11-11 at 22.03.30.jpeg" data-lightbox="branding" dafta-title="Branding 2"
                ><img src="/images/WhatsApp Image 2024-11-11 at 22.03.30.jpeg" class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
         </div>
